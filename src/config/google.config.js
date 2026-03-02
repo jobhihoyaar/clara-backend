@@ -1,4 +1,7 @@
 import { google } from "googleapis";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 if (!process.env.GOOGLE_PRIVATE_KEY) {
   console.error("❌ GOOGLE_PRIVATE_KEY missing");
